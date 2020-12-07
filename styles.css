@@ -1,0 +1,137 @@
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background: #f1f1f1;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #4ca78d;
+  
+}
+
+h3 {
+  font-size: 20px;
+  color: #4ca78d;
+  padding: 20px;
+  text-align: center;
+}
+.borders {
+  border: 10px solid blue;
+}
+
+.navbar-custom { 
+  padding: 10px;
+  background-color:#4ca78d; 
+} 
+
+/* Giving our navbar some padding and a background color */
+.navbar-light .navbar {
+  padding: 10px;
+  background: #3721b6;
+}
+
+.navbar-light .navbar-brand {
+  display: inline-block;
+  padding-right: 1.4125rem;
+  padding-left: 1.4125rem;
+  padding-top: 0.4125rem;
+  padding-bottom: 0.4125rem;
+  margin-right: 5rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  background: #4ca78d;
+  font-weight: bold;
+  color: #edf5f3;
+}
+
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.navbar li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 3px;
+}
+
+/* Getting rid of the default link styles here */
+.navbar li a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Styling the header, giving it a height, a background color, and some top padding */
+.header {
+  height: 200px;
+  padding-top: 20px;
+  background: #cdcdcd;
+}
+
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+.header h1 {
+  padding: 60px;
+  margin: 0;
+  color: rgb(80, 28, 28);
+  text-align: left;
+  font-size: 5px;
+}
+
+/* Giving the .post element margin on 3 sides */
+.post {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.box {
+  height: 800px;
+  padding: 20px;
+  color: rgb(119, 91, 91);
+  background: rgb(45, 154, 182);
+}
+
+
+.container_table{
+  background-color: rgb(245, 240, 240);
+  height:100px;
+  }
+
+#nav-select {
+  visibility: hidden;
+}
+
+@media(max-width: 768px) {
+  .navbar.bg-light {
+      background-color:  rgb(78, 161, 134) !important;
+  }
+}
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+
+  .navbar-collapse{
+    background-color: rgb(78, 161, 134);
+    }  
+    
+  .navbar li {
+    padding: 10px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+}
